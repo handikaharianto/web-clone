@@ -1,5 +1,6 @@
 import Banner from "@/components/truewind/banner";
 import Header from "@/components/truewind/header";
+import Hero from "@/components/truewind/hero";
 
 export default function TruewindPage() {
   return (
@@ -8,6 +9,7 @@ export default function TruewindPage() {
         <Banner />
         <Header />
       </div>
+      <Hero />
     </>
   );
 }
