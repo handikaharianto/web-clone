@@ -43,13 +43,13 @@ export default function Header() {
   return (
     <header className="bg-white shadow">
       <div className="overflow-hidden">
-        <div className="px-6 py-5 flex justify-between items-center">
+        <div className="px-6 py-5 flex justify-between items-center 2xl:px-0 2xl:max-w-7xl 2xl:mx-auto">
           <div>
             <Image
               src="/truewind/truewind-logo.webp"
               alt="Logo"
               width={120}
-              height={120}
+              height={27}
             />
           </div>
           <button

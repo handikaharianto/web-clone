@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Banner() {
   return (
     <div className="hidden lg:block bg-[#041f41]">
-      <div className="px-6 py-2 flex justify-between">
+      <div className="px-6 py-2 flex justify-between 2xl:px-0 2xl:max-w-7xl 2xl:mx-auto">
         <div className="flex gap-x-1 items-center">
           <Image
             src="/truewind/truewind-initial-logo.webp"
