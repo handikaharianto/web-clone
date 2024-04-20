@@ -65,9 +65,9 @@ export default function Features() {
         {featureItems.map((item, index) => (
           <div
             key={index}
-            className="group grid gap-y-8 gap-x-16 grid-flow-row-dense lg:grid-cols-2 items-center"
+            className="group grid gap-y-8 gap-x-16 grid-flow-row-dense md:grid-cols-2 items-center"
           >
-            <div className="space-y-8 lg:group-odd:col-start-2">
+            <div className="space-y-8 md:group-odd:col-start-2">
               <h4 className="font-archivo text-3xl font-medium lg:text-4xl !leading-relaxed">
                 {item.title}
               </h4>
@@ -106,13 +106,13 @@ export default function Features() {
                 </div>
               </Link>
             </div>
-            <div className="lg:h-[400px] lg:group-odd:col-start-1 lg:group-odd:col-end-2">
+            <div className="md:h-[300px] lg:h-[400px] md:group-odd:col-start-1">
               <Image
                 src={item.image}
                 alt="Feature"
                 width={400}
                 height={400}
-                className="overflow-hidden rounded-3xl lg:w-full object-cover h-full"
+                className="overflow-hidden rounded-3xl w-full object-cover h-full"
               />
             </div>
           </div>

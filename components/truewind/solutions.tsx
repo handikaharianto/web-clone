@@ -56,7 +56,7 @@ export default function Solutions() {
               <h3 className="text-2xl font-medium text-center font-archivo">
                 {solution.sectionTitle}
               </h3>
-              <div className="mt-8 flex flex-col gap-y-8">
+              <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-1 auto-rows-fr gap-y-8">
                 {solution.contents.map((item) => (
                   <div
                     key={item.title}
