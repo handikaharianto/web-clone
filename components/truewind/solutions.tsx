@@ -47,13 +47,13 @@ export default function Solutions() {
   return (
     <section>
       <div className="py-20 max-w-7xl mx-auto px-4">
-        <h2 className="text-center text-4xl text-zinc-800 font-medium leading-snug">
+        <h2 className="text-center text-4xl text-zinc-800 font-medium leading-snug font-archivo">
           Explore Truewind&apos;s AI-powered Solutions
         </h2>
         <div className="mt-16 grid gap-8 lg:gap-x-16 md:grid-cols-2 mx-auto max-w-5xl">
           {solutionItems.map((solution) => (
             <div key={solution.sectionTitle}>
-              <h3 className="text-2xl font-medium text-center">
+              <h3 className="text-2xl font-medium text-center font-archivo">
                 {solution.sectionTitle}
               </h3>
               <div className="mt-8 flex flex-col gap-y-8">
