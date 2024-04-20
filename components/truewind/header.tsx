@@ -44,18 +44,37 @@ export default function Header() {
     <header className="bg-white shadow">
       <div className="overflow-hidden">
         <div className="px-6 py-5 flex justify-between items-center 2xl:px-0 2xl:max-w-7xl 2xl:mx-auto">
-          <div>
+          <div className="flex items-center gap-x-8">
             <Image
               src="/truewind/truewind-logo.webp"
               alt="Logo"
               width={120}
               height={27}
             />
+            <ul className="lg:flex lg:items-center lg:gap-x-8 hidden">
+              {navItems.map((item) => (
+                <li key={item.title}>
+                  <Link
+                    href={item.url}
+                    className="text-sm text-zinc-800 font-medium"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          <Link
+            href="#"
+            className="bg-[#ffc220] text-zinc-900 px-8 py-3 rounded-full font-medium hidden lg:inline-block"
+          >
+            Book a Demo
+          </Link>
           <button
             onClick={() => toggleNavbar(!isOpen)}
             className={clsx(
-              "p-2 rounded-md transition duration-300",
+              "p-2 rounded-md transition duration-300 lg:hidden",
               isOpen ? "bg-zinc-900 text-white" : "bg-transparent"
             )}
           >
@@ -85,6 +104,7 @@ export default function Header() {
               animate={{ height: "auto" }}
               exit={{ height: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="lg:hidden"
             >
               <ul className="flex flex-col justify-center items-center gap-y-6 p-8">
                 {navItems.map((item) => (
