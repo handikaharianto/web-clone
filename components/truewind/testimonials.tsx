@@ -65,7 +65,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="pb-20">
+      <div className="pb-20 relative -z-10">
         <Marquee speed={70}>
           <div className="flex items-center gap-x-8 ml-8">
             {testimonialItems.map((testimony, index) => (
