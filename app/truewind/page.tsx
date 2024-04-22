@@ -8,11 +8,12 @@ import Testimonials from "@/components/truewind/testimonials";
 import Media from "@/components/truewind/media";
 import Demo from "@/components/truewind/demo";
 import Faqs from "@/components/truewind/faqs";
+import Footer from "@/components/truewind/footer";
 
 export default function TruewindPage() {
   return (
     <>
-      <div className="fixed w-full">
+      <div className="fixed w-full z-10">
         <Banner />
         <Header />
       </div>
@@ -24,6 +25,7 @@ export default function TruewindPage() {
       <Media />
       <Demo />
       <Faqs />
+      <Footer />
     </>
   );
 }
