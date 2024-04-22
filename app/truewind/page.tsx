@@ -3,6 +3,7 @@ import Features from "@/components/truewind/features";
 import Header from "@/components/truewind/header";
 import Hero from "@/components/truewind/hero";
 import Solutions from "@/components/truewind/solutions";
+import Clients from "@/components/truewind/clients";
 
 export default function TruewindPage() {
   return (
@@ -14,6 +15,7 @@ export default function TruewindPage() {
       <Hero />
       <Solutions />
       <Features />
+      <Clients />
     </>
   );
 }
