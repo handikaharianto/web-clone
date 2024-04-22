@@ -6,6 +6,7 @@ import Solutions from "@/components/truewind/solutions";
 import Clients from "@/components/truewind/clients";
 import Testimonials from "@/components/truewind/testimonials";
 import Media from "@/components/truewind/media";
+import Demo from "@/components/truewind/demo";
 
 export default function TruewindPage() {
   return (
@@ -20,6 +21,7 @@ export default function TruewindPage() {
       <Clients />
       <Testimonials />
       <Media />
+      <Demo />
     </>
   );
 }
