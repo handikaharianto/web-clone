@@ -11,7 +11,7 @@ export default function Media() {
             <TextHighlight>Featured</TextHighlight> news coverage
           </h2>
         </div>
-        <div className="grid items-center justify-center gap-y-16 mt-16 md:my-32 md:grid-cols-3">
+        <div className="grid items-center justify-center gap-y-16 my-16 md:my-32 md:grid-cols-3">
           <div className="flex flex-col justify-center items-center">
             <Image
               src="/truewind/new-york-times-logo.webp"

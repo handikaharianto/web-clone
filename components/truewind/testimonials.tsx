@@ -65,12 +65,12 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="pb-20 relative -z-10">
-        <Marquee speed={70}>
+      <div className="pb-20 relative">
+        <Marquee speed={70} autoFill>
           <div className="flex items-center gap-x-8 ml-8">
             {testimonialItems.map((testimony, index) => (
               <div
-                key={`${testimony}-index`}
+                key={`${testimony}-${index}`}
                 className="border border-zinc-200 rounded-2xl max-w-96 p-8"
               >
                 <div className="border-b border-zinc-200 pb-8">
